@@ -17,29 +17,41 @@
   <body>
     <div class="container">
       <h1 class="text-center">Computer Science Quiz</h1>
+      <div class="alert alert-success d-none" id="success">
+        Your answer is correct
+      </div>
+      <div class="alert alert-danger d-none" id="danger">
+        Your answer is wrong
+      </div>
       <div class="card mb-3">
         <div class="card-body">
           <h3 class="card-title" id="question"></h3>
         </div>
       </div>
-      <div id="options" class="row">
+      <div id="options" class="row mb-3">
         <div id="left-list" class="col">
           <div id="a" class="option">
             <input type="radio" name="options" id="1" value="a" />
+            <span></span>
           </div>
           <div id="b" class="option">
             <input type="radio" name="options" id="2" value="b" />
+            <span></span>
           </div>
         </div>
         <div id="right-list" class="col">
           <div id="c" class="option">
             <input type="radio" name="options" id="3" value="c" />
+            <span></span>
           </div>
           <div id="d" class="option">
             <input type="radio" name="options" id="4" value="d" />
+            <span></span>
           </div>
         </div>
       </div>
+      <button id="submit" class="btn btn-primary btn-lg">Submit</button>
+      <button id="next" class="btn btn-light border btn-lg">Next</button>
     </div>
     <script src="index.js"></script>
   </body>
